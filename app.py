@@ -51,7 +51,7 @@ def topalbums(data):
         
         
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Script to find stats of users individually or as a group",allow_abbrev=False)
+    parser = argparse.ArgumentParser(description="Script that uses spotify API to search for an artist, displaying there top tracks and albums released in spotify.",allow_abbrev=False)
     parser.add_argument('-xd',"--name", action='store', type=str,help="Enter the artist name")
     args = parser.parse_args()
     if args.name:
